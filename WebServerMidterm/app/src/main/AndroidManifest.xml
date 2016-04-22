@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dudrb.weatherapitest">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <!-- 인터넷 접속 허용 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MedicalOrganization.MedicalOrg" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Weather.WeatherActivity" />
+        <activity android:name=".MedicalOrganization.StoreActivity.MedicalDetail" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.MedicdalDetailEng" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.MedicalOrgEng" />
+        <activity android:name=".MedicalOrganization.StoreActivity.HospUniv" />
+        <activity android:name=".MedicalOrganization.StoreActivity.Oriental" />
+        <activity android:name=".MedicalOrganization.StoreActivity.Dental" />
+        <activity android:name=".MedicalOrganization.StoreActivity.Derma" />
+        <activity android:name=".MedicalOrganization.StoreActivity.All" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.AllEng" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.DentalEng" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.University" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.OrientalEng" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.AestheticEng" />
+        <activity android:name=".MedicalOrganizationEnglish.Store.StoreAcitivityEng.PlasticEng" />
+        <activity android:name=".CityTour.TourMain" />
+        <activity android:name=".CityTour.TourInfo1" />
+        <activity android:name=".CityTour.TourInfo2" />
+        <activity android:name=".CityTour.TourInfo3"></activity>
+    </application>
+
+</manifest>
